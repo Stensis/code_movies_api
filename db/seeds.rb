@@ -32,3 +32,28 @@ Anime.create([
     { title: 'Fullmetal Alchemist', image: 'https://www.example.com/image5.jpg', cast: 'Rie Kugimiya, Romi Park, Megumi Toyoguchi', ratings: 9 }
   ])
   
+#   3.comedy
+Comedy.create!(title: "The Hangover", 
+    image: "https://example.com/hangover.jpg", 
+    cast: "Bradley Cooper, Ed Helms, Zach Galifianakis", 
+    ratings: 8.1)
+
+Comedy.create!(title: "Bridesmaids", 
+    image: "https://example.com/bridesmaids.jpg", 
+    cast: "Kristen Wiig, Maya Rudolph, Rose Byrne", 
+    ratings: 6.8)
+
+Comedy.create!(title: "Superbad", 
+    image: "https://example.com/superbad.jpg", 
+    cast: "Jonah Hill, Michael Cera, Christopher Mintz-Plasse", 
+    ratings: 7.6)
+
+Comedy.create!(title: "Step Brothers", 
+    image: "https://example.com/stepbrothers.jpg", 
+    cast: "Will Ferrell, John C. Reilly", 
+    ratings: 6.9)
+
+Comedy.create!(title: "Anchorman: The Legend of Ron Burgundy", 
+    image: "https://example.com/anchorman.jpg", 
+    cast: "Will Ferrell, Christina Applegate, Paul Rudd", 
+    ratings: 7.2)
