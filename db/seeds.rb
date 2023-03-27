@@ -15,7 +15,7 @@ User.create(name: "Sam Williams", contact: 55555512, email: "sam.williams@exampl
 
 # genre
 
-# categories
+# movies categories
 # 1.action
 Action.create(title: "Die Hard", image: "https://example.com/die-hard.jpg", cast: "Bruce Willis, Alan Rickman", ratings: 8, created_at:"4/01/2019")
 Action.create(title: "The Terminator", image: "https://example.com/terminator.jpg", cast: "Arnold Schwarzenegger, Linda Hamilton", ratings: 9, created_at:"4/03/2019")
@@ -23,3 +23,12 @@ Action.create(title: "John Wick", image: "https://example.com/john-wick.jpg", ca
 Action.create(title: "Lethal Weapon", image: "https://example.com/lethal-weapon.jpg", cast: "Mel Gibson, Danny Glover", ratings: 7, created_at:"4/04/2019")
 Action.create(title: "The Matrix", image: "https://example.com/the-matrix.jpg", cast: "Keanu Reeves, Laurence Fishburne", ratings: 9,created_at:"4/05/2019")
 
+# Anime
+Anime.create([
+    { title: 'Attack on Titan', image: 'https://www.example.com/image1.jpg', cast: 'Yuki Kaji, Marina Inoue, Yui Ishikawa', ratings: 8 },
+    { title: 'Naruto', image: 'https://www.example.com/image2.jpg', cast: 'Junko Takeuchi, Noriaki Sugiyama, Chie Nakamura', ratings: 7 },
+    { title: 'One Piece', image: 'https://www.example.com/image3.jpg', cast: 'Mayumi Tanaka, Kazuya Nakai, Akemi Okamura', ratings: 9 },
+    { title: 'Death Note', image: 'https://www.example.com/image4.jpg', cast: 'Mamoru Miyano, Kappei Yamaguchi, Aya Hirano', ratings: 8 },
+    { title: 'Fullmetal Alchemist', image: 'https://www.example.com/image5.jpg', cast: 'Rie Kugimiya, Romi Park, Megumi Toyoguchi', ratings: 9 }
+  ])
+  
