@@ -10,7 +10,62 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_27_000317) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_27_010026) do
+  create_table "actions", force: :cascade do |t|
+    t.string "title"
+    t.string "image"
+    t.string "cast"
+    t.integer "ratings"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "animes", force: :cascade do |t|
+    t.string "title"
+    t.string "image"
+    t.string "cast"
+    t.integer "ratings"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "comedies", force: :cascade do |t|
+    t.string "title"
+    t.string "image"
+    t.string "cast"
+    t.integer "ratings"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "dramas", force: :cascade do |t|
+    t.string "title"
+    t.string "image"
+    t.string "cast"
+    t.integer "ratings"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "genres", force: :cascade do |t|
+    t.string "action_id"
+    t.string "drama_id"
+    t.string "horror_id"
+    t.string "anime_id"
+    t.string "comedy_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "horrors", force: :cascade do |t|
+    t.string "title"
+    t.string "image"
+    t.string "cast"
+    t.integer "ratings"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.integer "contact"
